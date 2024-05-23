@@ -18,16 +18,16 @@ Projeto final de programação linear do grupo 1 que busca otimizar as entregas 
 
 
 ## Variáveis de decisão:
-			   | = 1,  Se i atende j, i ∈ C, j = 1,...,n
+		   | = 1,  Se i atende j, i ∈ C, j = 1,...,n
 	x[i][j] -> |
-			   | = 0,  Se não
+		   | = 0,  Se não
 
-			   | = 1, Se i é um CD, i ∈ C
+		   | = 1, Se i é um CD, i ∈ C
 	y[i]	-> |
-			   | = 0, Se não
+		   | = 0, Se não
 			   
 ## Função Objetivo:
-			 m
+		     m
     MIN	 Σ   Σ E[j] * D[i][j] * x[i][j]
 	   	i∈C j=1
    
