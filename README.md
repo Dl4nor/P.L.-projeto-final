@@ -7,13 +7,15 @@
 
 Uma empresa deseja instalar m centros de distribuição de produtos para atender a n localidades representadas por L1, L2, . . . , Ln. Inicialmente a empresa determinou dentre as n localidades a serem atendidas, um conjunto C contendo aquelas que estariam aptas a receber os centros de distribuição, levando em conta fatores econômicos e estruturais das cidades envolvidas. A empresa estima o número de viagens que serão feitas para cada uma das n localidades a cada semana.
 	
-	a. Determine quais localidades devem ser escolhidas para abrigar os centros de distribuição, associando
-	   a cada uma delas os clientes que devem ser atendidos pelas mesmas, de modo que se minimize a distância 
-	   total percorrida para as entregas semanais.
+	a. Determine quais localidades devem ser escolhidas para abrigar os centros de 
+ 	   distribuição, associando a cada uma delas os clientes que devem ser atendidos 
+	   pelas mesmas, de modo que se minimize a distância total percorrida para as 
+	   entregas semanais.
 
-	b. Determine as localidades para os centros de distribuição supondo agora que a empresa deseja escolher 
- 	   tais localidades de maneira que as distâncias semanais percorridas pelos veículos de cada centro sejam as 
-	   mais próximas possíveis, ou seja, de modo que haja equilíbrio entre as distâncias percorridas pelas frotas 
+	b. Determine as localidades para os centros de distribuição supondo agora que a 
+ 	   empresa deseja escolher tais localidades de maneira que as distâncias semanais 
+	   percorridas pelos veículos de cada centro sejam as mais próximas possíveis, ou 
+	   seja, de modo que haja equilíbrio entre as distâncias percorridas pelas frotas 
 	   de cada centro de distribuição.
 
 Utilize distância euclidiana (em linha reta) entre as localidades 
