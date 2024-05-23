@@ -1,8 +1,27 @@
-# P.L.-projeto-final
-Projeto final de programação linear do grupo 1 que busca otimizar as entregas de determinado centro de distribuição.
+# Prog. Linear - Projeto Final
+<h2>
+	<img style="transform: rotateY(180deg);" src="./src/caminhao.png" title="Fôô Fôô" alt="Simbolo de um caminhão" width="5%"/>
+ 	Problema de Distribuição
+</h2>
+
+
+Uma empresa deseja instalar m centros de distribuição de produtos para atender a n localidades representadas por L1, L2, . . . , Ln. Inicialmente a empresa determinou dentre as n localidades a serem atendidas, um conjunto C contendo aquelas que estariam aptas a receber os centros de distribuição, levando em conta fatores econômicos e estruturais das cidades envolvidas. A empresa estima o número de viagens que serão feitas para cada uma das n localidades a cada semana.
+	
+	a. Determine quais localidades devem ser escolhidas para abrigar os centros de distribuição, associando a cada uma delas os clientes que devem ser atendidos pelas mesmas, de modo que se minimize a distância total percorrida para as entregas semanais.
+
+	b. Determine as localidades para os centros de distribuição supondo agora que a empresa deseja escolher tais localidades de maneira que as distâncias semanais percorridas pelos veículos de cada centro sejam as mais próximas possíveis, ou seja, de modo que haja equilíbrio entre as distâncias percorridas pelas frotas de cada centro de distribuição.
+
+Utilize distância euclidiana (em linha reta) entre as localidades 
+
+$\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$
 
 ---
- # Projeto Final - Grupo 1 -> Localização
+<h2>
+	<a href="https://www.gurobi.com/">
+  		<img src="./src/gurobi.png" Title="Gurobi" alt="Símbolo do Gurobi" width="3%"/>
+	</a>
+  	Projeto Final - Grupo 1 -> Modelo Algébrico:
+</h2>
 
     m Cidades
     n Centros de Distribuição
