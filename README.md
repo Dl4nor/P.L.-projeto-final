@@ -70,3 +70,14 @@ $\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$
 	 Σ  x[i][j] <= m * y[i], i ∈ C
     j=1
 
+____
+
+# AUTHORS
+
+- [Gabriel DP]()
+- [Gabriel LF]()
+- [Guilherme FAR](https://github.com/GFRrank)
+- [Leonardo T](https://github.com/t3staa)
+- [Luis FN]()
+- [Ronald VS](https://github.com/Dl4nor)
+
