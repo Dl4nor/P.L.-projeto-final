@@ -39,7 +39,8 @@ $\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$
 	C[i] 	-> Cidade i que pode ser centro de distribuição
 	E[j] 	-> Número de entregas da cidade j, j = 1,...,m
 	P[i] 	-> Coordenada da cidade i, i = 1,...,n
-	D[i][j] -> Distnacia da cidade i para o centro j, i = 1,...,n, j = 1,...,m
+	D[i][j] -> Distância da cidade i para o centro j, i = 1,...,n, j = 1,...,m
+ 	
 	D[i][j]  = √((x[i]-x[j])^2 + (y[i]-y[j])^2)
 
 
@@ -68,4 +69,15 @@ $\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$
      m
 	 Σ  x[i][j] <= m * y[i], i ∈ C
     j=1
+
+____
+
+# 💻 AUTHORS
+
+- [Gabriel DP]()
+- [Gabriel LF]()
+- [Guilherme FAR](https://github.com/GFRrank)
+- [Leonardo T](https://github.com/t3staa)
+- [Luis FN]()
+- [Ronald VS](https://github.com/Dl4nor)
 
