@@ -16,12 +16,11 @@ import gurobipy as gp
 import math as mt
 
 dados = ["inst_20_3", "inst_20_4", "inst_30_4", "inst_40_8", "inst_40_9", "inst_50_7", "inst_50_10", "inst_60_11", "inst_60_12"]
-controle = 1
-controle = 1
+controle = 10
 dataPath = ""
 
 # Contruindo a tabela de escolha dos dados
-while (controle > 0 and controle < 10):
+while (controle > 1 or controle < 9):
   dataPath = "./data/"
 
   print("| --------------------------------- |\n"
@@ -38,7 +37,7 @@ while (controle > 0 and controle < 10):
   controle = int(input("| "))
 
 # Definindo qual será o dado selecionado
-  if (controle == 0 or controle > 9):
+  if (controle == 0):
     break
 
   dataPath += dados[controle-1] + ".txt"
@@ -51,7 +50,7 @@ while (controle > 0 and controle < 10):
   C = []                       # Conjunto de cidades que devem ou não receber CD
   E = []                       # Nr total de entregas para cada cidade
   P = []                       # Coordenadas de cada cidade
-  L = 1000                      # Limite máximo de diferença entre as distâncias de cada CD
+
 
   for i in range(m):
     aux = arquivo.readline().split()
@@ -65,8 +64,6 @@ while (controle > 0 and controle < 10):
 
   D = [[mt.sqrt((P[i][0] - P[j][0]) ** 2 + (P[i][1] - P[j][1]) ** 2) for j in range(m)] for i in range(m)]
 
-  Dt = 0
-
   # print("P = ", P)
   # print("E = ", E)
   # print("C = ", C)
@@ -78,11 +75,10 @@ while (controle > 0 and controle < 10):
   # Variável de decisão
   x = modelo.addVars(C, m, vtype = gp.GRB.BINARY)
   y = modelo.addVars(C, vtype = gp.GRB.BINARY)
-  z = modelo.addVar()
 
 
   # Função Objetivo
-  modelo.setObjective(z, sense = gp.GRB.MINIMIZE)
+  modelo.setObjective(sum(E[j] * D[i][j] * x[i,j] for i in C for j in range(m)), sense = gp.GRB.MINIMIZE)
 
   # Restrições
   C1 = modelo.addConstrs(
@@ -95,10 +91,6 @@ while (controle > 0 and controle < 10):
   C3 = modelo.addConstrs(
       sum(x[i,j] for j in range(m)) <= m * y[i]
       for i in C
-  )
-  C4 = modelo.addConstrs(
-    sum(E[j] * D[i][j] * x[i, j] for j in range(m)) <= z
-    for i in C
   )
 
   # Suprimindo terminal
