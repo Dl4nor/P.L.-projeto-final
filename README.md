@@ -74,10 +74,10 @@ ____
 
 # 💻 AUTHORS
 
-- [Gabriel DP]()
-- [Gabriel LF]()
+- [Gabriel DP](https://github.com/GabrielDiper)
+- [Gabriel LF](https://github.com/gabriellf96)
 - [Guilherme FAR](https://github.com/GFRrank)
 - [Leonardo T](https://github.com/t3staa)
-- [Luis FN]()
+- [Luis FN](https://github.com/felipe-novaes)
 - [Ronald VS](https://github.com/Dl4nor)
 
