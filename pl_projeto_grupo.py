@@ -17,10 +17,11 @@ import math as mt
 
 dados = ["inst_20_3", "inst_20_4", "inst_30_4", "inst_40_8", "inst_40_9", "inst_50_7", "inst_50_10", "inst_60_11", "inst_60_12"]
 controle = 1
+controle = 1
 dataPath = ""
 
 # Contruindo a tabela de escolha dos dados
-while (controle > 1 or controle < 9):
+while (controle > 0 and controle < 10):
   dataPath = "./data/"
 
   print("| --------------------------------- |\n"
@@ -37,7 +38,7 @@ while (controle > 1 or controle < 9):
   controle = int(input("| "))
 
 # Definindo qual será o dado selecionado
-  if (controle == 0):
+  if (controle == 0 or controle > 9):
     break
 
   dataPath += dados[controle-1] + ".txt"
@@ -50,6 +51,7 @@ while (controle > 1 or controle < 9):
   C = []                       # Conjunto de cidades que devem ou não receber CD
   E = []                       # Nr total de entregas para cada cidade
   P = []                       # Coordenadas de cada cidade
+  L = 1000                      # Limite máximo de diferença entre as distâncias de cada CD
 
   for i in range(m):
     aux = arquivo.readline().split()
@@ -62,6 +64,8 @@ while (controle > 1 or controle < 9):
   arquivo.close()
 
   D = [[mt.sqrt((P[i][0] - P[j][0]) ** 2 + (P[i][1] - P[j][1]) ** 2) for j in range(m)] for i in range(m)]
+
+  Dt = 0
 
   # print("P = ", P)
   # print("E = ", E)
