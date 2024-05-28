@@ -17,6 +17,7 @@ import math as mt
 
 dados = ["inst_20_3", "inst_20_4", "inst_30_4", "inst_40_8", "inst_40_9", "inst_50_7", "inst_50_10", "inst_60_11", "inst_60_12"]
 controle = 1
+controle = 1
 dataPath = ""
 
 # Contruindo a tabela de escolha dos dados
@@ -77,10 +78,11 @@ while (controle > 0 and controle < 10):
   # Variável de decisão
   x = modelo.addVars(C, m, vtype = gp.GRB.BINARY)
   y = modelo.addVars(C, vtype = gp.GRB.BINARY)
+  z = modelo.addVar()
 
 
   # Função Objetivo
-  modelo.setObjective(sum(E[j] * D[i][j] * x[i,j] for i in C for j in range(m)), sense = gp.GRB.MINIMIZE)
+  modelo.setObjective(z, sense = gp.GRB.MINIMIZE)
 
   # Restrições
   C1 = modelo.addConstrs(
@@ -94,13 +96,10 @@ while (controle > 0 and controle < 10):
       sum(x[i,j] for j in range(m)) <= m * y[i]
       for i in C
   )
-  """
   C4 = modelo.addConstrs(
-    sum(E[j] * D[i][j] * x[i, j] for j in range(m)) >= 
-    (sum(E[j] * D[k][j] * x[k, j] for k in C for j in range(m))/n) - L
+    sum(E[j] * D[i][j] * x[i, j] for j in range(m)) <= z
     for i in C
   )
-  """
 
   # Suprimindo terminal
   modelo.setParam("Outputflag", 0)
