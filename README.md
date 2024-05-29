@@ -45,21 +45,34 @@ $\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$
 
 
 ## Variáveis de decisão:
-		   | = 1,  Se i atende j, i ∈ C, j = 1,...,n
+### Variáveis da questão a:
+		       | = 1,  Se i atende j, i ∈ C, j = 1,...,n
 	x[i][j] -> |
-		   | = 0,  Se não
+		       | = 0,  Se não
 
-		   | = 1, Se i é um CD, i ∈ C
+		       | = 1, Se i é um CD, i ∈ C
 	y[i]	-> |
-		   | = 0, Se não
-			   
+		   	   | = 0, Se não
+
+### + Variável da questão b:
+
+	z		-> Limitador de menor distância de cada CD
+	   
 ## Função Objetivo:
+### Objetivo da questão A:
 		     m
     MIN	 Σ   Σ E[j] * D[i][j] * x[i][j]
 	   	i∈C j=1
+
+### Objetivo da questão B:
+	MIN  z
+
+	 Minimizamos z, controlando o valor dessa variável
+	 com a nova restrição, deixando-a menor do que a 
+	 somatória de todos os CDs (Objetivo de A).
    
 ## Restrições:
-
+### Restrições da questão A:
 	 Σ  x[i][j] = 1, j = 1,...m
     i∈C
 
@@ -69,6 +82,11 @@ $\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$
      m
 	 Σ  x[i][j] <= m * y[i], i ∈ C
     j=1
+
+### + Restrição da questão B:
+	 m
+	 Σ  E[j] * D[i][j] * x[i][j] <= z, i ∈ C
+	j=1
 
 ____
 
