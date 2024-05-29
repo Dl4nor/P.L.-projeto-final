@@ -17,7 +17,6 @@ import math as mt
 
 dados = ["inst_20_3", "inst_20_4", "inst_30_4", "inst_40_8", "inst_40_9", "inst_50_7", "inst_50_10", "inst_60_11", "inst_60_12"]
 controle = 1
-controle = 1
 dataPath = ""
 
 # Contruindo a tabela de escolha dos dados
@@ -114,8 +113,6 @@ while (controle > 0 and controle < 10):
   # Resolvendo o modelo
   modelo.optimize()
 
- 
-
   if(status == 3):
     print("Modelo Infactível!!!")
   else:
@@ -131,5 +128,5 @@ while (controle > 0 and controle < 10):
             Dtotal+=D[i][j]*E[j]
         print("|\n| Distancia Total percorrida pela cidade {}\t -> {:.3f} km".format(i+1, Dtotal))
     print("| ----------------------------------------------------------------")
-    print("| Valor ótimo: {:.2f} km".format(modelo.ObjVal))
+    print("| Distância Total de todos os CDs: {:.2f} km".format(sum(E[j] * D[i][j] * x[i, j].X for i in C for j in range(m))))
     print("| ________________________________________________________________\n")

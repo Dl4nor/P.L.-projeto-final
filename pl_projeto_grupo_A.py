@@ -16,11 +16,11 @@ import gurobipy as gp
 import math as mt
 
 dados = ["inst_20_3", "inst_20_4", "inst_30_4", "inst_40_8", "inst_40_9", "inst_50_7", "inst_50_10", "inst_60_11", "inst_60_12"]
-controle = 10
+controle = 1
 dataPath = ""
 
 # Contruindo a tabela de escolha dos dados
-while (controle > 1 or controle < 9):
+while (controle > 0 and controle < 10):
   dataPath = "./data/"
 
   print("| --------------------------------- |\n"
