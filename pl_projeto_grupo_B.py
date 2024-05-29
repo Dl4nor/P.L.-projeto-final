@@ -50,7 +50,6 @@ while (controle > 0 and controle < 10):
   C = []                       # Conjunto de cidades que devem ou não receber CD
   E = []                       # Nr total de entregas para cada cidade
   P = []                       # Coordenadas de cada cidade
-  L = 1000                      # Limite máximo de diferença entre as distâncias de cada CD
 
 
   for i in range(m):
@@ -79,7 +78,6 @@ while (controle > 0 and controle < 10):
   x = modelo.addVars(C, m, vtype = gp.GRB.BINARY)
   y = modelo.addVars(C, vtype = gp.GRB.BINARY)
   z = modelo.addVar()
-
 
   # Função Objetivo
   modelo.setObjective(z, sense = gp.GRB.MINIMIZE)
