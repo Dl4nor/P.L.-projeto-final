@@ -22,6 +22,7 @@ dataPath = ""
 # Contruindo a tabela de escolha dos dados
 while (controle > 0 and controle < 10):
   dataPath = "./data/"
+  resPath = "./res/A/"
 
   print("| --------------------------------- |\n"
         "|         seleção de dados          |\n"
@@ -41,6 +42,7 @@ while (controle > 0 and controle < 10):
     break
 
   dataPath += dados[controle-1] + ".txt"
+  resPath += dados[controle-1] + ".txt"
   arquivo = open(dataPath, "r")
 
   #conteudo = arquivo.read()
@@ -106,6 +108,27 @@ while (controle > 0 and controle < 10):
   modelo.optimize()
 
  
+  with open(resPath, "w") as arquivo:
+
+    if(status == 3):
+      print("Modelo Infactível!!!", file=arquivo)
+    else:
+      # Apresentando a solução
+      for i in C:
+        if(y[i].x > 0.5):
+          Dtotal=0
+          print("| ----------------------------------------------------------------", file=arquivo)
+          print("| O CD {} Atende à:".format(i+1), file=arquivo)
+          for j in range(m):
+            if (x[i, j].x > 0.5):
+              print("|\tCidade {}\t -> \t{:.3f} km \t -> {} Vezes ".format(j+1, D[i][j], E[j]), file=arquivo)
+              Dtotal+=D[i][j]*E[j]
+          print("|\n| Distancia Total percorrida pela cidade {}\t -> {:.3f} km".format(i+1, Dtotal), file=arquivo)
+      print("| ----------------------------------------------------------------", file=arquivo)
+      print("| Distância Total de todos os CDs: {:.2f} km".format(sum(E[j] * D[i][j] * x[i, j].X for i in C for j in range(m))), file=arquivo)
+      print("| ________________________________________________________________\n", file=arquivo)
+  
+  arquivo.close()
 
   if(status == 3):
     print("Modelo Infactível!!!")

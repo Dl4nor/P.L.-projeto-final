@@ -18,10 +18,12 @@ import math as mt
 dados = ["inst_20_3", "inst_20_4", "inst_30_4", "inst_40_8", "inst_40_9", "inst_50_7", "inst_50_10", "inst_60_11", "inst_60_12"]
 controle = 1
 dataPath = ""
+resPath = ""
 
 # Contruindo a tabela de escolha dos dados
 while (controle > 0 and controle < 10):
   dataPath = "./data/"
+  resPath = "./res/B/"
 
   print("| --------------------------------- |\n"
         "|         seleção de dados          |\n"
@@ -41,6 +43,7 @@ while (controle > 0 and controle < 10):
     break
 
   dataPath += dados[controle-1] + ".txt"
+  resPath += dados[controle-1] + ".txt"
   arquivo = open(dataPath, "r")
 
   #conteudo = arquivo.read()
@@ -111,20 +114,42 @@ while (controle > 0 and controle < 10):
   # Resolvendo o modelo
   modelo.optimize()
 
-  if(status == 3):
-    print("Modelo Infactível!!!")
-  else:
-    # Apresentando a solução
-    for i in C:
-      if(y[i].x > 0.5):
-        Dtotal=0
-        print("| ----------------------------------------------------------------")
-        print("| O CD {} Atende à:".format(i+1))
-        for j in range(m):
-          if (x[i, j].x > 0.5):
-            print("|\tCidade {}\t -> \t{:.3f} km \t -> {} Vezes ".format(j+1, D[i][j], E[j]))
-            Dtotal+=D[i][j]*E[j]
-        print("|\n| Distancia Total percorrida pela cidade {}\t -> {:.3f} km".format(i+1, Dtotal))
-    print("| ----------------------------------------------------------------")
-    print("| Distância Total de todos os CDs: {:.2f} km".format(sum(E[j] * D[i][j] * x[i, j].X for i in C for j in range(m))))
-    print("| ________________________________________________________________\n")
+  with open(resPath, "w") as arquivo:
+  
+    if(status == 3):
+      print("Modelo Infactível!!!", file=arquivo)
+    else:
+      # Apresentando a solução
+      for i in C:
+        if(y[i].x > 0.5):
+          Dtotal=0
+          print("| ----------------------------------------------------------------", file=arquivo)
+          print("| O CD {} Atende à:".format(i+1), file=arquivo)
+          for j in range(m):
+            if (x[i, j].x > 0.5):
+              print("|\tCidade {}\t -> \t{:.3f} km \t -> {} Vezes ".format(j+1, D[i][j], E[j]), file=arquivo)
+              Dtotal+=D[i][j]*E[j]
+          print("|\n| Distancia Total percorrida pela cidade {}\t -> {:.3f} km".format(i+1, Dtotal), file=arquivo)
+      print("| ----------------------------------------------------------------", file=arquivo)
+      print("| Distância Total de todos os CDs: {:.2f} km".format(sum(E[j] * D[i][j] * x[i, j].X for i in C for j in range(m))), file=arquivo)
+      print("| ________________________________________________________________\n", file=arquivo)
+    
+    arquivo.close()
+    
+    if(status == 3):
+      print("Modelo Infactível!!!")
+    else:
+      # Apresentando a solução
+      for i in C:
+        if(y[i].x > 0.5):
+          Dtotal=0
+          print("| ----------------------------------------------------------------")
+          print("| O CD {} Atende à:".format(i+1))
+          for j in range(m):
+            if (x[i, j].x > 0.5):
+              print("|\tCidade {}\t -> \t{:.3f} km \t -> {} Vezes ".format(j+1, D[i][j], E[j]))
+              Dtotal+=D[i][j]*E[j]
+          print("|\n| Distancia Total percorrida pela cidade {}\t -> {:.3f} km".format(i+1, Dtotal))
+      print("| ----------------------------------------------------------------")
+      print("| Distância Total de todos os CDs: {:.2f} km".format(sum(E[j] * D[i][j] * x[i, j].X for i in C for j in range(m))))
+      print("| ________________________________________________________________\n")
