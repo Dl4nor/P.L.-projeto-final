@@ -1,0 +1,36 @@
+| ----------------------------------------------------------------
+| O CD 8 Atende à:
+|	Cidade 1	 -> 	123.016 km 	 -> 10 Vezes 
+|	Cidade 3	 -> 	104.139 km 	 -> 7 Vezes 
+|	Cidade 5	 -> 	79.398 km 	 -> 3 Vezes 
+|	Cidade 6	 -> 	67.535 km 	 -> 3 Vezes 
+|	Cidade 8	 -> 	0.000 km 	 -> 10 Vezes 
+|	Cidade 10	 -> 	130.507 km 	 -> 3 Vezes 
+|	Cidade 11	 -> 	186.507 km 	 -> 10 Vezes 
+|
+| Distancia Total percorrida pela cidade 8	 -> 4656.530 km
+| ----------------------------------------------------------------
+| O CD 13 Atende à:
+|	Cidade 2	 -> 	40.497 km 	 -> 5 Vezes 
+|	Cidade 9	 -> 	28.460 km 	 -> 2 Vezes 
+|	Cidade 13	 -> 	0.000 km 	 -> 9 Vezes 
+|	Cidade 16	 -> 	364.177 km 	 -> 2 Vezes 
+|	Cidade 19	 -> 	360.701 km 	 -> 9 Vezes 
+|
+| Distancia Total percorrida pela cidade 13	 -> 4234.066 km
+| ----------------------------------------------------------------
+| O CD 14 Atende à:
+|	Cidade 4	 -> 	52.802 km 	 -> 9 Vezes 
+|	Cidade 7	 -> 	54.644 km 	 -> 2 Vezes 
+|	Cidade 12	 -> 	112.929 km 	 -> 10 Vezes 
+|	Cidade 14	 -> 	0.000 km 	 -> 4 Vezes 
+|	Cidade 15	 -> 	87.932 km 	 -> 6 Vezes 
+|	Cidade 17	 -> 	16.492 km 	 -> 5 Vezes 
+|	Cidade 18	 -> 	149.933 km 	 -> 8 Vezes 
+|	Cidade 20	 -> 	272.855 km 	 -> 3 Vezes 
+|
+| Distancia Total percorrida pela cidade 14	 -> 4341.879 km
+| ----------------------------------------------------------------
+| Distância Total de todos os CDs: 13232.48 km
+| ________________________________________________________________
+

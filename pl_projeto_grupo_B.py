@@ -23,7 +23,7 @@ resPath = ""
 # Contruindo a tabela de escolha dos dados
 while (controle > 0 and controle < 10):
   dataPath = "./data/"
-  resPath = "./res/B/"
+  resPath = "./res/B/resB_"
 
   print("| --------------------------------- |\n"
         "|         seleção de dados          |\n"
