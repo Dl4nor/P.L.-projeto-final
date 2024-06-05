@@ -80,7 +80,7 @@ while (controle > 0 and controle < 10):
 
 
   # Função Objetivo
-  modelo.setObjective(sum(E[j] * D[i][j] * x[i,j] for i in C for j in range(m)), sense = gp.GRB.MINIMIZE)
+  modelo.setObjective(sum(2 * E[j] * D[i][j] * x[i,j] for i in C for j in range(m)), sense = gp.GRB.MINIMIZE)
 
   # Restrições
   C1 = modelo.addConstrs(
@@ -123,9 +123,9 @@ while (controle > 0 and controle < 10):
             if (x[i, j].x > 0.5):
               print("|\tCidade {}\t -> \t{:.3f} km \t -> {} Vezes ".format(j+1, D[i][j], E[j]), file=arquivo)
               Dtotal+=D[i][j]*E[j]
-          print("|\n| Distancia Total percorrida pela cidade {}\t -> {:.3f} km".format(i+1, Dtotal), file=arquivo)
+          print("|\n| Distancia Total percorrida pela cidade {}\t -> {:.3f} km".format(i+1, 2 * Dtotal), file=arquivo)
       print("| ----------------------------------------------------------------", file=arquivo)
-      print("| Distância Total de todos os CDs: {:.2f} km".format(sum(E[j] * D[i][j] * x[i, j].X for i in C for j in range(m))), file=arquivo)
+      print("| Distância Total de todos os CDs: {:.2f} km".format(sum(2 * E[j] * D[i][j] * x[i, j].X for i in C for j in range(m))), file=arquivo)
       print("| ________________________________________________________________\n", file=arquivo)
   
   arquivo.close()
@@ -143,7 +143,7 @@ while (controle > 0 and controle < 10):
           if (x[i, j].x > 0.5):
             print("|\tCidade {}\t -> \t{:.3f} km \t -> {} Vezes ".format(j+1, D[i][j], E[j]))
             Dtotal+=D[i][j]*E[j]
-        print("|\n| Distancia Total percorrida pela cidade {}\t -> {:.3f} km".format(i+1, Dtotal))
+        print("|\n| Distancia Total percorrida pela cidade {}\t -> {:.3f} km".format(i+1, 2 * Dtotal))
     print("| ----------------------------------------------------------------")
     print("| Valor ótimo: {:.2f} km".format(modelo.ObjVal))
     print("| ________________________________________________________________\n")

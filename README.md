@@ -37,9 +37,9 @@ $\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$
 ## Parâmetros:
 
 	C[i] 	-> Cidade i que pode ser centro de distribuição
-	E[j] 	-> Número de entregas da cidade j, j = 1,...,m
-	P[i] 	-> Coordenada da cidade i, i = 1,...,n
-	D[i][j] -> Distância da cidade i para o centro j, i = 1,...,n, j = 1,...,m
+	E[j] 	-> Número de entregas na cidade j, j = 1,...,m
+	P[j] 	-> Coordenada da cidade j, j = 1,...,m
+	D[i][j] -> Distância do centro j para a cidade i, j = 1,...,m,  i = 1,...,m
  	
 	D[i][j]  = √((x[i]-x[j])^2 + (y[i]-y[j])^2)
 
