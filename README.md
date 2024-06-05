@@ -46,17 +46,17 @@ $\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$
 
 ## Variáveis de decisão:
 ### Variáveis da questão a:
-		       | = 1,  Se i atende j, i ∈ C, j = 1,...,n
+		   | = 1,  Se i atende j, i ∈ C, j = 1,...,n
 	x[i][j] -> |
-		       | = 0,  Se não
+		   | = 0,  Se não
 
-		       | = 1, Se i é um CD, i ∈ C
+		   | = 1, Se i é um CD, i ∈ C
 	y[i]	-> |
-		   	   | = 0, Se não
+		   | = 0, Se não
 
 ### + Variável da questão b:
 
-	z		-> Limitador de menor distância de cada CD
+	z	-> Limitador de menor distância de cada CD
 	   
 ## Função Objetivo:
 ### Objetivo da questão A:
