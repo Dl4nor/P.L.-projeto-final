@@ -15,6 +15,7 @@ pip install gurobipy    -> Rodar comando no terminal
 import gurobipy as gp
 import math as mt
 import matplotlib as plt
+import os
 
 dados = ["inst_20_3", "inst_20_4", "inst_30_4", "inst_40_8", "inst_40_9", "inst_50_7", "inst_50_10", "inst_60_11", "inst_60_12"]
 controle = 1
@@ -23,6 +24,7 @@ resPath = ""
 
 # Contruindo a tabela de escolha dos dados
 while (controle > 0 and controle < 10):
+  os.system('cls')
   dataPath = "./data/"
   resPath = "./res/B/resB_"
 
@@ -95,7 +97,7 @@ while (controle > 0 and controle < 10):
       sum(y[i] for i in C) == n
   )
   C3 = modelo.addConstrs(
-      sum(x[i,j] for j in range(m)) <= m * y[i]
+      sum(x[i,j] for j in range(m)) <= (m-n+1) * y[i]
       for i in C
   )
   C4 = modelo.addConstrs(
@@ -130,9 +132,9 @@ while (controle > 0 and controle < 10):
             if (x[i, j].x > 0.5):
               print("|\tCidade {}\t -> \t{:.3f} km \t -> {} Vezes ".format(j+1, D[i][j], E[j]), file=arquivo)
               Dtotal+=D[i][j]*E[j]
-          print("|\n| Distancia Total percorrida pela cidade {}\t -> {:.3f} km".format(i+1, Dtotal), file=arquivo)
+          print("|\n| Distancia Total percorrida pela cidade {}\t -> {:.3f} km".format(i+1, 2 * Dtotal), file=arquivo)
       print("| ----------------------------------------------------------------", file=arquivo)
-      print("| Distância Total de todos os CDs: {:.2f} km".format(sum(E[j] * D[i][j] * x[i, j].X for i in C for j in range(m))), file=arquivo)
+      print("| Distância Total de todos os CDs: {:.2f} km".format(sum(2 * E[j] * D[i][j] * x[i, j].X for i in C for j in range(m))), file=arquivo)
       print("| ________________________________________________________________\n", file=arquivo)
     
     arquivo.close()
@@ -154,3 +156,5 @@ while (controle > 0 and controle < 10):
       print("| ----------------------------------------------------------------")
       print("| Distância Total de todos os CDs: {:.2f} km".format(sum(2 * E[j] * D[i][j] * x[i, j].X for i in C for j in range(m))))
       print("| ________________________________________________________________\n")
+    
+    input("\n\t------------- PRESSIONE ENTER -------------\n")

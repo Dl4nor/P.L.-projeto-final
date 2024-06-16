@@ -10,7 +10,7 @@
 |	Cidade 11	 -> 	155.589 km 	 -> 10 Vezes 
 |	Cidade 13	 -> 	163.811 km 	 -> 9 Vezes 
 |
-| Distancia Total percorrida pela cidade 6	 -> 6958.386 km
+| Distancia Total percorrida pela cidade 6	 -> 13916.772 km
 | ----------------------------------------------------------------
 | O CD 14 Atende à:
 |	Cidade 4	 -> 	52.802 km 	 -> 9 Vezes 
@@ -22,15 +22,15 @@
 |	Cidade 17	 -> 	16.492 km 	 -> 5 Vezes 
 |	Cidade 18	 -> 	149.933 km 	 -> 8 Vezes 
 |
-| Distancia Total percorrida pela cidade 14	 -> 3993.998 km
+| Distancia Total percorrida pela cidade 14	 -> 7987.996 km
 | ----------------------------------------------------------------
 | O CD 19 Atende à:
 |	Cidade 16	 -> 	12.728 km 	 -> 2 Vezes 
 |	Cidade 19	 -> 	0.000 km 	 -> 9 Vezes 
 |	Cidade 20	 -> 	164.104 km 	 -> 3 Vezes 
 |
-| Distancia Total percorrida pela cidade 19	 -> 517.767 km
+| Distancia Total percorrida pela cidade 19	 -> 1035.533 km
 | ----------------------------------------------------------------
-| Distância Total de todos os CDs: 11470.15 km
+| Distância Total de todos os CDs: 22940.30 km
 | ________________________________________________________________
 

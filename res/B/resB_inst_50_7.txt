@@ -1,0 +1,82 @@
+| ----------------------------------------------------------------
+| O CD 3 Atende à:
+|	Cidade 3	 -> 	0.000 km 	 -> 10 Vezes 
+|	Cidade 12	 -> 	37.590 km 	 -> 4 Vezes 
+|	Cidade 21	 -> 	41.617 km 	 -> 5 Vezes 
+|	Cidade 23	 -> 	41.761 km 	 -> 5 Vezes 
+|	Cidade 24	 -> 	162.997 km 	 -> 4 Vezes 
+|	Cidade 31	 -> 	82.292 km 	 -> 4 Vezes 
+|	Cidade 37	 -> 	34.828 km 	 -> 4 Vezes 
+|	Cidade 39	 -> 	55.317 km 	 -> 5 Vezes 
+|	Cidade 40	 -> 	126.052 km 	 -> 3 Vezes 
+|	Cidade 42	 -> 	160.524 km 	 -> 3 Vezes 
+|
+| Distancia Total percorrida pela cidade 3	 -> 5648.069 km
+| ----------------------------------------------------------------
+| O CD 11 Atende à:
+|	Cidade 2	 -> 	186.724 km 	 -> 4 Vezes 
+|	Cidade 11	 -> 	0.000 km 	 -> 7 Vezes 
+|	Cidade 19	 -> 	164.712 km 	 -> 10 Vezes 
+|	Cidade 28	 -> 	50.160 km 	 -> 4 Vezes 
+|
+| Distancia Total percorrida pela cidade 11	 -> 5189.311 km
+| ----------------------------------------------------------------
+| O CD 13 Atende à:
+|	Cidade 5	 -> 	97.509 km 	 -> 10 Vezes 
+|	Cidade 7	 -> 	31.401 km 	 -> 6 Vezes 
+|	Cidade 13	 -> 	0.000 km 	 -> 5 Vezes 
+|	Cidade 17	 -> 	27.857 km 	 -> 4 Vezes 
+|	Cidade 29	 -> 	120.354 km 	 -> 5 Vezes 
+|	Cidade 34	 -> 	197.497 km 	 -> 2 Vezes 
+|	Cidade 41	 -> 	47.170 km 	 -> 10 Vezes 
+|
+| Distancia Total percorrida pela cidade 13	 -> 5486.763 km
+| ----------------------------------------------------------------
+| O CD 16 Atende à:
+|	Cidade 4	 -> 	115.412 km 	 -> 8 Vezes 
+|	Cidade 10	 -> 	89.471 km 	 -> 10 Vezes 
+|	Cidade 14	 -> 	25.554 km 	 -> 10 Vezes 
+|	Cidade 16	 -> 	0.000 km 	 -> 4 Vezes 
+|	Cidade 22	 -> 	101.637 km 	 -> 6 Vezes 
+|
+| Distancia Total percorrida pela cidade 16	 -> 5366.727 km
+| ----------------------------------------------------------------
+| O CD 27 Atende à:
+|	Cidade 1	 -> 	26.833 km 	 -> 8 Vezes 
+|	Cidade 27	 -> 	0.000 km 	 -> 7 Vezes 
+|	Cidade 30	 -> 	17.889 km 	 -> 4 Vezes 
+|	Cidade 32	 -> 	130.507 km 	 -> 2 Vezes 
+|	Cidade 35	 -> 	64.405 km 	 -> 4 Vezes 
+|	Cidade 36	 -> 	125.515 km 	 -> 8 Vezes 
+|	Cidade 46	 -> 	76.276 km 	 -> 6 Vezes 
+|	Cidade 47	 -> 	69.778 km 	 -> 8 Vezes 
+|
+| Distancia Total percorrida pela cidade 27	 -> 5649.700 km
+| ----------------------------------------------------------------
+| O CD 43 Atende à:
+|	Cidade 6	 -> 	85.615 km 	 -> 3 Vezes 
+|	Cidade 9	 -> 	67.602 km 	 -> 2 Vezes 
+|	Cidade 15	 -> 	68.411 km 	 -> 10 Vezes 
+|	Cidade 20	 -> 	49.406 km 	 -> 10 Vezes 
+|	Cidade 25	 -> 	88.837 km 	 -> 7 Vezes 
+|	Cidade 33	 -> 	51.478 km 	 -> 3 Vezes 
+|	Cidade 43	 -> 	0.000 km 	 -> 9 Vezes 
+|	Cidade 44	 -> 	86.493 km 	 -> 4 Vezes 
+|
+| Distancia Total percorrida pela cidade 43	 -> 5384.968 km
+| ----------------------------------------------------------------
+| O CD 50 Atende à:
+|	Cidade 8	 -> 	109.275 km 	 -> 5 Vezes 
+|	Cidade 18	 -> 	14.318 km 	 -> 10 Vezes 
+|	Cidade 26	 -> 	74.404 km 	 -> 10 Vezes 
+|	Cidade 38	 -> 	1.414 km 	 -> 2 Vezes 
+|	Cidade 45	 -> 	28.000 km 	 -> 6 Vezes 
+|	Cidade 48	 -> 	63.063 km 	 -> 10 Vezes 
+|	Cidade 49	 -> 	145.880 km 	 -> 4 Vezes 
+|	Cidade 50	 -> 	0.000 km 	 -> 2 Vezes 
+|
+| Distancia Total percorrida pela cidade 50	 -> 5637.158 km
+| ----------------------------------------------------------------
+| Distância Total de todos os CDs: 38362.70 km
+| ________________________________________________________________
+

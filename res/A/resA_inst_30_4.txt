@@ -1,0 +1,50 @@
+| ----------------------------------------------------------------
+| O CD 3 Atende à:
+|	Cidade 3	 -> 	0.000 km 	 -> 7 Vezes 
+|	Cidade 7	 -> 	52.811 km 	 -> 9 Vezes 
+|	Cidade 8	 -> 	97.801 km 	 -> 10 Vezes 
+|	Cidade 11	 -> 	65.795 km 	 -> 8 Vezes 
+|	Cidade 12	 -> 	62.394 km 	 -> 7 Vezes 
+|	Cidade 16	 -> 	65.513 km 	 -> 4 Vezes 
+|	Cidade 18	 -> 	76.694 km 	 -> 5 Vezes 
+|	Cidade 21	 -> 	63.530 km 	 -> 3 Vezes 
+|
+| Distancia Total percorrida pela cidade 3	 -> 6505.077 km
+| ----------------------------------------------------------------
+| O CD 13 Atende à:
+|	Cidade 2	 -> 	85.802 km 	 -> 4 Vezes 
+|	Cidade 13	 -> 	0.000 km 	 -> 7 Vezes 
+|	Cidade 19	 -> 	96.255 km 	 -> 9 Vezes 
+|	Cidade 20	 -> 	102.474 km 	 -> 3 Vezes 
+|	Cidade 25	 -> 	105.304 km 	 -> 5 Vezes 
+|
+| Distancia Total percorrida pela cidade 13	 -> 4086.894 km
+| ----------------------------------------------------------------
+| O CD 23 Atende à:
+|	Cidade 1	 -> 	203.961 km 	 -> 3 Vezes 
+|	Cidade 4	 -> 	176.366 km 	 -> 9 Vezes 
+|	Cidade 5	 -> 	179.338 km 	 -> 4 Vezes 
+|	Cidade 9	 -> 	228.403 km 	 -> 2 Vezes 
+|	Cidade 10	 -> 	90.736 km 	 -> 6 Vezes 
+|	Cidade 14	 -> 	51.884 km 	 -> 6 Vezes 
+|	Cidade 17	 -> 	57.559 km 	 -> 4 Vezes 
+|	Cidade 23	 -> 	0.000 km 	 -> 10 Vezes 
+|	Cidade 26	 -> 	75.928 km 	 -> 2 Vezes 
+|	Cidade 27	 -> 	110.136 km 	 -> 8 Vezes 
+|	Cidade 28	 -> 	214.217 km 	 -> 3 Vezes 
+|	Cidade 29	 -> 	34.132 km 	 -> 3 Vezes 
+|	Cidade 30	 -> 	126.178 km 	 -> 7 Vezes 
+|
+| Distancia Total percorrida pela cidade 23	 -> 14241.067 km
+| ----------------------------------------------------------------
+| O CD 24 Atende à:
+|	Cidade 6	 -> 	21.840 km 	 -> 2 Vezes 
+|	Cidade 15	 -> 	103.774 km 	 -> 6 Vezes 
+|	Cidade 22	 -> 	73.164 km 	 -> 5 Vezes 
+|	Cidade 24	 -> 	0.000 km 	 -> 10 Vezes 
+|
+| Distancia Total percorrida pela cidade 24	 -> 2064.289 km
+| ----------------------------------------------------------------
+| Distância Total de todos os CDs: 26897.33 km
+| ________________________________________________________________
+
